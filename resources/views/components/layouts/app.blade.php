@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{config("app.name")  }}</title>
+    <title>{{config("app.name")}}</title>
 
     @vite(['resources/css/app.css'])
 </head>
-<body>
-    <h1>app layout</h1>
-    <main>
+<body class="bg-light-color-2 dark:bg-dark-color-1">
+    <x-sidebar.sidebar 
+        class="w-[250px] fixed h-full"
+    />
+    
+    <main class="ml-[250px]"> 
         {{ $slot }}
     </main>
     @vite(['resources/js/app.js'])

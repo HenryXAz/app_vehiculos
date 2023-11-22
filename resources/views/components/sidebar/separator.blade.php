@@ -1,0 +1,1 @@
+<hr class="border dark:border-dark-color-2 border-light-color-2 my-5">

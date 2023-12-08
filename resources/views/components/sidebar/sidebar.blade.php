@@ -1,6 +1,6 @@
 @props(['class' => ""])
 
-<aside class="{{$class . " px-3 py-2 bg-light-color-1 dark:bg-dark-color-1"}}">
+<aside class="{{$class . " px-3 py-2 bg-light-color-1 dark:bg-dark-color-1 dark:border-r dark:border-r-dark-color-2"}}">
     <div class="flex justify-between mb-10">
         <img src="{{asset("/images/logo.png")}}" width="50" alt="logo">
 

@@ -1,4 +1,4 @@
-@props(["position" => "left"])
+@props(["position" => "left", "class" => ""])
 
 @php
 $positionText = "";
@@ -19,6 +19,6 @@ break;
 }
 @endphp
 
-<p class="{{$positionText . " text-sm md:text-lg text-gray-900 dark:text-gray-200"}}">
+<p class="{{$class . " " .$positionText . " text-sm md:text-base text-gray-900 dark:text-gray-200"}}">
     {{$slot}}
 </p>

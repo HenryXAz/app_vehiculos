@@ -8,7 +8,7 @@
 
     @vite(['resources/css/app.css'])
 </head>
-<body class="bg-light-color-2 dark:bg-dark-color-2">
+<body class="bg-light-color-2 dark:bg-dark-color-1">
     <div class="max-w-7xl mx-auto mt-5 flex justify-end">
         <x-toggle-theme.toggle-theme />
     </div>

@@ -3,7 +3,7 @@
         class="border rounded-md border-gray-300 dark:border-gray-700 p-2 wire:bg-transparent outline-none flex justify-between w-full hover:cursor-pointer"
         @click="openOptions">
         <p class="text-sm dark:text-gray-200 text-gray-800">
-            user@example.com
+            {{Auth::user()->email}}
         </p>
         <span class="font-light text-gray-600 dark:text-gray-200" x-show="!showOptions">
             ▼

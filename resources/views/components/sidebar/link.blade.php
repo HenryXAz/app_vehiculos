@@ -1,9 +1,9 @@
 @props(['route' => ''])
 
 @php
-    $subPathPattern = "/" . $route . ".\w+/";
+    $indexRoute = explode(".", $route);
+    $subPathPattern = "/" . $indexRoute[0] . ".\w/";
     $isSubPath = preg_match($subPathPattern, Request::route()->getName());
-    
     $classes = "block my-2 font-light text-left rounded-md w-full p-2 ";
     $classes .= (Route::is($route) || $isSubPath)
     ?

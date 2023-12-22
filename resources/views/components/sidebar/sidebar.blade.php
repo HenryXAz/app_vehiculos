@@ -18,5 +18,8 @@
         <x-sidebar.link route="home">
             Home
         </x-sidebar.link>
+        <x-sidebar.link route="users.index">
+            Usuarios
+        </x-sidebar.link>
     </nav>
 </aside>
